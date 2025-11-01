@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvQLcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản lý công việc hàng tuần"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#00674F"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvCongViec"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Công việc:"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etCongViec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhap ten cong viec:"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvNoiDung"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Nội dung:"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etNoiDung"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhap noi dung:"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvNgayHT"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Ngày HT:"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00674F"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvGioHT"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Giờ HT:"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00674F"
+            android:text="Time"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thêm CV"
+        android:backgroundTint="#00674F"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvDanhSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách công việc:"
+        android:textStyle="bold"
+        android:background="#00674F"
+        android:textColor="#FFFFFF"
+        android:padding="8dp"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/lvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etEditSongName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên bài hát"
+        android:inputType="text|textCapSentences"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etEditReleaseDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nhập ngày ra đĩa (dd-MM-yyyy)"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/etEditSongName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00674F"
+        android:text="Lưu lại"
+        app:layout_constraintTop_toBottomOf="@+id/etEditReleaseDate"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
